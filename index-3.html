@@ -1,0 +1,287 @@
+<script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {"AC U.csv":false};
+        var gk_fileData = {"AC U.csv":"PI,Institute,Faculty,Department/School,Research 1,Research 2,Research 3,Research 4,Research 5,Research 6\r\nBing FU,CITYU,CBM,BME,Gut microbiome,Immunity,,,,\r\nAnderson Ho Cheung SHUM,CITYU,CBM,BME,Antibody,B cell,,,,\r\nChung TIN,CITYU,CBM,BME,Crispr,T cell,,,,\r\nChia Hung CHEN,CITYU,CBM,BME,Single cell,Cell sorting,,,,\r\nPeng SHI,CITYU,CBM,BME,Neural,Single cell,Gene editing,T cell,Immunotherapy,siRNA\r\nTing Hsuan CHEN,CITYU,CBM,BME,Crispr,,,,,\r\nGigi Pui Chi LO,CITYU,CBM,BMS,Targeted protein degradation,Cancer,,,,\r\nHui Yong YIN,CITYU,CBM,BMS,Liver cancer,Metabolomics,Multi-omics,Single Cell,,\r\nJian YAN,CITYU,CBM,BMS,Cancer,lncRNA,Gene editing,,,\r\nJi Lin ZHANG,CITYU,CBM,BMS,Binding affinity,Genomics,Epigenetics,,,\r\nJin Young KIM,CITYU,CBM,BMS,Stem cell,Neural Cell,,,,\r\nKatie Kei Hang CHAN,CITYU,CBM,BMS,Genetic,Bioinformatics,,,,\r\nKingston King Lun MAK,CITYU,CBM,BMS,Stem cell,,,,,\r\nKiwon BAN,CITYU,CBM,BMS,Stem cell,Cardivascular,,,,\r\nKui Ming CHAN,CITYU,CBM,BMS,Cancer,Genome Editing,Crispr,Epigenetics,,\r\nKwan Ting CHOW,CITYU,CBM,BMS,Cancer,Immunology,Immunotherapy,,,\r\nLi WANG,CITYU,CBM,BMS,Metabolic ,Vascular,Endothelial,Drug,,\r\nLiang ZHANG,CITYU,CBM,BMS,Cancer,Microenviroment,Exosomes,Signaling,,\r\nLing Xi CHEN,CITYU,CBM,BMS,Cancer,Bioinformatics,Genomics,,,\r\nMichael Meng Su YANG,CITYU,CBM,BMS,Cancer,Microfludic,Nanomedicine,,,\r\nMing Liang HE,CITYU,CBM,BMS,Drug,Cancer,,,,\r\nRebecca Yuet Ming CHIN,CITYU,CBM,BMS,Singnaling pathway,Cancer,,,,\r\nShuk Han CHENG,CITYU,CBM,BMS,Crispr,Organ regeneration,,,,\r\nTerrence Chi Kong LAU,CITYU,CBM,BMS,RNA,,,,,\r\nWen Jun XIONG,CITYU,CBM,BMS,Stem cell,Retinal degeneration,Gene therapy,,,\r\nXin DENG,CITYU,CBM,BMS,Antibiotic,RNA,Epigenetics,,,\r\nYu HUANG,CITYU,CBM,BMS,Metabolic ,Vascular,Endothelial,,,\r\nZongli ZHENG,CITYU,CBM,BMS,Liquid biopsy,Genome Editing,Gene editing,,,\r\nChun Kit KWOK,CITYU,SCI,CHEM,RNA,Binding affinity,,,,\r\nGuang Yu ZHU,CITYU,SCI,CHEM,Cancer,Target validation,Drug,,,\r\nMaria BABAK,CITYU,SCI,CHEM,Drug,Target identification,Proteomics,,,\r\nYudai MATSUDA,CITYU,SCI,CHEM,Nature Product,Genomics,,,,\r\nEddie Chi Him MA,CITYU,CBM,NEURO,Neurodegenerative diseases,Genetics,Drug,Metabolomic,,\r\nJessica Ai Jia LIU,CITYU,CBM,NEURO,Multi-omics,Single cell,,,,\r\nKwok On LAI,CITYU,CBM,NEURO,Signaling pathway,Binding affinity,Post-translational modifications,Crispr,Gene editing,Stem cell\r\nYoung Jin LEE,CITYU,CBM,NEURO,Metabolic ,,,,,\r\nChristy Oi Ying Hung,CITYU,CBM,NEURO,Alzheimer's Disease,RNA therapeutics,Drug,Lysosomal dysfunction,,\r\nYu Xiang SUN,CITYU,CBM,NEURO,RNA modifications,,,,,\r\nÁkos KENÉZ,CITYU,JCC,PH,Metabolic ,,,,,\r\nPriscilla FREITAS GERBER,CITYU,JCC,PH,Immunity,,,,,\r\nJun LI,CITYU,JCC,PH,Multi-omics,Metabolic ,,,,\r\nRun Sheng LI,CITYU,JCC,PH,RNA,Genetics,,,,\r\nGuan YANG,CITYU,JCC,PH,Immunology,,,,,\r\nPatrick Ming Kuen TANG,CUHK,MED,ACP,Tumour microenvironment,Kidney diseases,Immunotherapy,,,\r\nGary Man Kit TSE,CUHK,MED,ACP,Breast cancers,Her2,Immunohistochemistry,FISH,,\r\nFernand Mac Moune LAI,CUHK,MED,ACP,Glomerulonephritis,Prostate cancer,,,,\r\nKwok Wai LO,CUHK,MED,ACP,Nasopharyngeal cancer,NK cell,Single-cell RNA-seq,siRNA,Cell Sorting,\r\nHo Keung NG,CUHK,MED,ACP,Genetics,Brian tumors,,,,\r\nMargaret Heung Ling NG,CUHK,MED,ACP,Multiple Myeloma,Leukemia,CAR-T,Immunogenetics,MRD,Epigenetics\r\nKa Fai TO,CUHK,MED,ACP,Nasopharyngeal cancer,Lung cancer,Gastrointestinal cancers,Signaling,Genetics,\r\nWei KANG,CUHK,MED,ACP,Tumour microenvironment,Signaling pathway,Gastric cancer,Genomics,Immunohistochemistry,FISH\r\nAnna Chi Man TSANG,CUHK,MED,ACP,Epstein-Barr virus,Nasopharyngeal carcinoma,Organoid,Tumour microenvironment,mRNA,Aptamer\r\nDa Jiang GUO,CUHK,MED,ACP,Crispr,Melanoma,,,,\r\nNicki Yat Hin LEUNG,CUHK,MED,ACP,T cell,Immunotherapy,Immuno-oncology,Allergy,Immunology,\r\nWilliam WU,CUHK,MED,AIC,Genomics,Autophagy,T cell,Microbiota,,\r\nLin ZHANG,CUHK,MED,AIC,Genomics,Autophagy,,,,\r\nHua Rong CHEN,CUHK,MED,AIC,RNA modifications,GI cancer,Microbiome,,,\r\nXiao Dong LIU,CUHK,MED,AIC,Microbiome,Spatial Biology,Single-cell RNA-seq,Microbiota,FISH,\r\nLi Kai TAN,CUHK,MED,AIC,γδ T cell,Multi-omics,TCR,Spatial Biology,Immunology,\r\nLI Ting DUAN,CUHK,ERG,BME,Signaling Pathway,,,,,\r\nAlan Zhong LI,CUHK,ERG,BME,Orgnoid,Stem Cell,,,,\r\nChuan Bin MAO,CUHK,ERG,BME,Crispr,,,,,\r\nXue YANG,CUHK,ERG,BME,Immunotherapy,,,,,\r\nDong An WANG,CUHK,ERG,BME,Stem Cell,,,,,\r\nTony Shu Kam MOK,CUHK,MED,CLO,Lung cancer,Immunotherapy,cfDNA,Vaccine,,\r\nAnthony Tak Cheung CHAN,CUHK,MED,CLO,Nasopharyngeal Carcinoma,Immunotherapy,,,,\r\nBrigette Buig Yue MA,CUHK,MED,CLO,Nasopharyngeal Carcinoma,Gastric cancer,Colorectal cancer,Drug,,\r\nStephen Lam CHAN,CUHK,MED,CLO,Hepatocellular carcinoma,Immunotherapy,Signaling Pathway,Sing cell RNA seq,,\r\nHerbert Ho Fung LOONG,CUHK,MED,CLO,Melanoma,Sarcoma ,,,,\r\nMolly Siu Ching LI,CUHK,MED,CLO,Lung cancer,Cell Therapy,,,,\r\nLandon CHAN,CUHK,MED,CLO,Neuroendocrine cancers,Immunotherapy,Genetics,,,\r\nDennis LO,CUHK,MED,CPY,Genetics,Genomics,cfDNA,Nasopharyngeal carcinoma ,,\r\nAllen CHAN,CUHK,MED,CPY,Genetics,Genomics,cfDNA,Nasopharyngeal carcinoma ,,\r\nNelson TANG,CUHK,MED,CPY,Genetics,Genomics,Bioinformatics,,,\r\nChun Kwok WONG,CUHK,MED,CPY,Immunology,Single-cell RNA-seq,Proteomics,,,\r\nKathy LUI,CUHK,MED,CPY,Cardiovascular Immunology,Stem Cell,Immunology,T cell,,\r\nWing Kin SUNG,CUHK,MED,CPY,Genetics,Genomics,Bioinformatics,,,\r\nPei Yong JIANG,CUHK,MED,CPY,Genetics,Genomics,Bioinformatics,,,\r\nPeter CHEUNG,CUHK,MED,CPY,Vaccine,Cryo-EM,,,,\r\nHei Ming LAI,CUHK,MED,CPY,Neuropsychiatric diseases,,,,,\r\nJacky LAM,CUHK,MED,CPY,Epstein-Barr virus,cfDNA,Nasopharyngeal cancer,Genomics,,\r\nGuan Hua ZHU,CUHK,MED,CPY,Multi-omics,Liquid Biopsy,Bioinformatics,cfDNA,,\r\nChun Kit CHOI,CUHK,MED,CPY,Gene Therapy,,,,,\r\nMing Yuan LI,CUHK,MED,CPY,Proteomics,,,,,\r\nQing ZHOU,CUHK,MED,CPY,cfDNA,cfDNA methylation,,,,\r\nRossa CHIU,CUHK,MED,CPY,Genetics,Genomics,cfDNA,Nasopharyngeal carcinoma ,,\r\nAndreas MOELLER,CUHK,MED,ENT,Extracellular Vesicles ,,,,,\r\nDian Jing GUO,CUHK,SCI,LIFESCI,Genomics,Metabolomics,,,,\r\nEdwin Ho Yin CHAN,CUHK,SCI,LIFESCI,Pluripotent Stem Cell,siRNA,FISH,NGS,Neurodegenerative diseases,\r\nFaye Suk Ying TSANG,CUHK,SCI,LIFESCI,Stem Cell,Cardiovascular,,,,\r\nGuan Qun WANG,CUHK,SCI,LIFESCI,RNA modifications,,,,,\r\nHon Ming LAM,CUHK,SCI,LIFESCI,Multi-omics,,,,,\r\nJack Wing Tak WONG,CUHK,SCI,LIFESCI,Cardiovascular ,Stem Cell,,,,\r\nJacky Chi Ki NGO,CUHK,SCI,LIFESCI,Protein Structures,,,,,\r\nJerome Ho Lam HUI,CUHK,SCI,LIFESCI,Multi-omics,Genomics,Bioinformatics,,,\r\nKam Bo WONG,CUHK,SCI,LIFESCI,Protein Structures,X-ray crystallography,cryo-EM,,,\r\nKim Hei Man CHOW,CUHK,SCI,LIFESCI,Alzheimer's Disease,,,,,\r\nKin Ming KWAN,CUHK,SCI,LIFESCI,Genetics,,,,,\r\nKwok Fai LAU,CUHK,SCI,LIFESCI,Alzheimer’s disease,,,,,\r\nLi Wen JIANG,CUHK,SCI,LIFESCI,Organelle,Plant,,,,\r\nLi Ting ZHAI,CUHK,SCI,LIFESCI,Cyro-EM,,,,,\r\nMichael Kenneth CHAN,CUHK,SCI,LIFESCI,Protein Crystallography ,,,,,\r\nPeter Chi Keung CHEUNG,CUHK,SCI,LIFESCI,Gut Microbiota,,,,,\r\nShannon Wing Ngor AU,CUHK,SCI,LIFESCI,Protein Structures,,,,,\r\nSi Lin ZHONG,CUHK,SCI,LIFESCI,Genomics,Signaling pathway,,,,\r\nTing Fung CHAN,CUHK,SCI,LIFESCI,Multi-omics,Genomics,Bioinformatics,,,\r\nXiao Hong ZHUANG,CUHK,SCI,LIFESCI,Autophagy,Signaling pathway,,,,\r\nStephen Zhe Fan CHEN,CUHK,SCI,LIFESCI,Pluripotent Stem Cell,siRNA,FISH,NGS,Neurodegenerative diseases,\r\nZi Zhen LIANG,CUHK,SCI,LIFESCI,Organelle,Cryo-EM,,,,\r\nJuliana CN CHAN,CUHK,MED,MECT,Diabetes,Genetics,,,,\r\nElaine YK CHOW,CUHK,MED,MECT,Diabetes,Genetics,Drug,,,\r\nChester YH LAI ,CUHK,MED,MECT,Immunology,,,,,\r\nRonald CW MA,CUHK,MED,MECT,Diabetes,Genetics,Genomics,,,\r\nHong Yan GOU,CUHK,MED,MECT,Gastric cancer,Gut Microbiota,Metabolic,,,\r\nJessie QY LIANG,CUHK,MED,MECT,Genomics,Epigenetics,Microbiome,,,\r\nSiew C. NG,CUHK,MED,MECT,Inflammatory Bowel Disease,Colorectal Cancer,Gut Microbiota,Genetics,,\r\nSi SU,CUHK,MED,MECT,Gastric cancer,Microbiome,,,,\r\nRaymond S.Y. TANG ,CUHK,MED,MECT,Colorectal Cancer,,,,,\r\nChi Chun WONG,CUHK,MED,MECT,Gastric cancer,,,,,\r\nGrace LH WONG,CUHK,MED,MECT,Hepatocellular Carcinoma,,,,,\r\nVincent WS WONG ,CUHK,MED,MECT,Liver diseases,,,,,\r\nJustin CY WU,CUHK,MED,MECT,Gastrointestinal disorder,,,,,\r\nZhi Lu XU,CUHK,MED,MECT,Metabolic,Bioinformatics,Microbiome,,,\r\nJun YU,CUHK,MED,MECT,Gastric cancer,Gut Microbiota,Genomics,,,\r\nJennifer Xiang ZHANG,CUHK,MED,MECT,Gastric cancer,Gut Microbiota,Genomics,,,\r\nJing Wan ZHANG,CUHK,MED,MECT,Inflammatory bowel disease,Colorectal cancer,Gut Microbiota,,,\r\nTimothy CY KWOK,CUHK,MED,MECT,Alzheimer's Disease,,,,,\r\nTing ZHANG,CUHK,MED,MECT,Gut Microbiota,,,,,\r\nGrace CY LUI,CUHK,MED,MECT,Tuberculosis,HIV,,,,\r\nLisa WC AU,CUHK,MED,MECT,Neuroimaging,,,,,\r\nBonaventure YM IP,CUHK,MED,MECT,Stroke imaging,,,,,\r\nOwen Ho KO,CUHK,MED,MECT,Neurodegenerative Diseases,Immunohistochemistry ,,,,\r\nCindy XY LENG,CUHK,MED,MECT,Stroke imaging,,,,,\r\nThomas WH LEUNG,CUHK,MED,MECT,Stroke imaging,,,,,\r\nVincent CT MOK,CUHK,MED,MECT,Neurodegenerative Diseases,Neuroimaging,Genetics,,,\r\nKen KP CHAN ,CUHK,MED,MECT,Pleural diseases,,,,,\r\nDavid SC HUI ,CUHK,MED,MECT,Respiratory,,,,,\r\nHo SO,CUHK,MED,MECT,Connective tissue diseases,,,,,\r\nLai Shan TAM,CUHK,MED,MECT,SLE,Rheumatoid arthritis,,,,\r\nMargaret IP,CUHK,MED,MIC,Gram positive cocci,Antibiotic resistance,Genomics,,,\r\nZi Gui CHEN,CUHK,MED,MIC,HPV,Bioinformatics,,,,\r\nChristopher K C LAI,CUHK,MED,MIC,Gut Microbiota,,,,,\r\nRita WY NG,CUHK,MED,MIC,Microbiome,,,,,\r\nXiao YANG,CUHK,MED,MIC,Drug,,,,,\r\nSiaw Shi BOON,CUHK,MED,MIC,Signaling Pathway,Drug,HPV,,,\r\nAdrian Jun CHU,CUHK,MED,MIC,Drug,,,,,\r\nSi Shuo WANG,CUHK,MED,MIC,Microbiome,Genomics,,,,\r\nRichard Kwong Wai CHOY,CUHK,MED,OBG,Genetics,Genomics,Chromosome structural variants,Structural variants,low-pass GS,\r\nElvis Zi Rui DONG,CUHK,MED,OBG,Genetics,Multi-omics,Chromosome structural variants,Structural variants,low-pass GS,\r\nYe CAO,CUHK,MED,OBG,Genetics,Multi-omics,Chromosome structural variants,Structural variants,low-pass GS,\r\nMatthew Hoi Kin CHAU,CUHK,MED,OBG,Genetics,Multi-omics,Chromosome structural variants,Structural variants,low-pass GS,\r\nRonald Chi Chiu WANG,CUHK,MED,OBG,Signaling pathway,Binding affinity,,,,\r\nMax Yao WANG,CUHK,MED,OBG,Gestational diseases,Microbiome,,,,\r\nJudy Tao ZHANG,CUHK,MED,OBG,Immunology,,,,,\r\nLing QIN,CUHK,MED,ORT,Osteoarthritis,,,,,\r\nHua Ting WANG,CUHK,MED,ORT,Stem Cell,Genetics,Spatial Biology,Single Cell,,\r\nLouis Wing Hoi CHEUNG,CUHK,MED,ORT,Osteoarthritis,,,,,\r\nPauline Po Yee LUI,CUHK,MED,ORT,Stem Cell,,,,,\r\nWayne Yuk Wai LEE,CUHK,MED,ORT,Cell Therapy,,,,,\r\nJerry Jian Kun XU,CUHK,MED,ORT,Cell Therapy,Single-cell RNA-seq,,,,\r\nNing ZHANG,CUHK,MED,ORT,Cell Therapy,Genetics,,,,\r\nSi En LIN,CUHK,MED,ORT,Signaling Pathway,Stem Cell,,,,\r\nWen Xue TONG,CUHK,MED,ORT,Gene Therapy,Osteoarthritis,,,,\r\nXiao Na CHEN,CUHK,MED,ORT,Stem Cell,Genetics,Spatial Biology,Single Cell,Binding affinity,\r\nDelon Yu Sheng HSUEH,CUHK,MED,ORT,Cell Therapy,,,,,\r\nCalvin Chi Pui PANG,CUHK,MED,OVS,Genomics,Genetics,Metabolomics,Stem cell,,\r\nGuy Li Jia CHEN,CUHK,MED,OVS,Genomics,Genetics,,,,\r\nJason Cheuk Sing YAM,CUHK,MED,OVS,Genomics,Genetics,,,,\r\nWai Kit CHU,CUHK,MED,OVS,Autophagy,Genomics,Genetics,Post-translational modifications,,\r\nAlbert Martin Man Chim LI,CUHK,MED,PAE,Respiratory,,,,,\r\nTing Fan LEUNG,CUHK,MED,PAE,Immunology,Immunogenetics,Allergy,Genomics,,\r\nChi Kong LI,CUHK,MED,PAE,Haematology,Leukaemia,Stem cell,Cell Therapy,T cell,\r\nRenee Wan Yi CHAN,CUHK,MED,PAE,Respiratory,,,,,\r\nKam Tong LEUNG,CUHK,MED,PAE,Haematology,Leukaemia,Stem cell,Cell Therapy,T cell,Hematopoietic stem cell\r\nChristine Yee Yan WAI,CUHK,MED,PAE,Allergy,Immunotherapy,,,,\r\nKenneth Kin Wah TO,CUHK,MED,PHARM,Cancer,Epigenetics,,,,\r\nBilly Wai Lung NG,CUHK,MED,PHARM,Drug,,,,,\r\nYvonne Ngar Woon KAM,CUHK,MED,PHARM,Tumor microenvironment ,Immunology,T cell,,,\r\nAlbert Hoi Hung CHEUNG,CUHK,MED,SBS,Hematology,Stem Cell,Organoid,,,\r\nAlfred Sze Lok CHENG,CUHK,MED,SBS,Cancer,Immunology,Genetics,,,\r\nAlisa Sau Wun SHUM,CUHK,MED,SBS,Metabolic ,Diabetes,,,,\r\nAndrew Man Lok CHAN,CUHK,MED,SBS,Cancer,Signaling pathway,,,,\r\nAnna Maria BLOCKI,CUHK,MED,SBS,Stem cell,,,,,\r\nBarbara Pui CHAN,CUHK,MED,SBS,Stem cell,Organoid,,,,\r\nBo FENG,CUHK,MED,SBS,Signaling pathway,Immunotherapy,Stem cell,Pluripotent Stem Cell,Crispr,T cell\r\nBo GAO,CUHK,MED,SBS,Signaling pathway,,,,,\r\nCara Qin CAO,CUHK,MED,SBS,Cancer,Bioinformatics,3D genome,Multi-omics,,\r\nCarol Man TONG,CUHK,MED,SBS,Cancer,Stem Cell,,,,\r\nChao WAN,CUHK,MED,SBS,Stem cell,,,,,\r\nChris Ka Pun MOK,CUHK,MED,SBS,Immunology,,,,,\r\nMichelle Dan WANG,CUHK,MED,SBS,Stem cell,Exosome,,,,\r\nEllen Ngar Yun POON,CUHK,MED,SBS,Stem cell,Multi-omics,Metabolism,,,\r\nEllis Kin Lam FOK,CUHK,MED,SBS,Genetics,Stem Cell,,,,\r\nFranky Leung CHAN,CUHK,MED,SBS,Cancer,Signaling pathway,Tumor microenvironment,Stem cell,,\r\nGang LU,CUHK,MED,SBS,Stem cell,Bioinformatics,,,,\r\nHannah Xiao Yan HUI,CUHK,MED,SBS,Immunology,,,,,\r\nHon Cheong SO,CUHK,MED,SBS,Genetics,Bioinformatics,Multi-omics,,,\r\nHui ZHAO,CUHK,MED,SBS,Stem cell,Genetics,Epigenetics,,,\r\nJacque Pak Kan IP,CUHK,MED,SBS,Stem cell,,,,,\r\nJing Ying ZHOU,CUHK,MED,SBS,Gastric cancer,Immunology,Immunotherapy,T cell,,\r\nLinda Shen GU,CUHK,MED,SBS,Genetics,Gene therapy,,,,\r\nMai Har SHAM,CUHK,MED,SBS,Stem cell,Genetics,Signaling Pathway,,,\r\nRocky Sung Chi TUAN,CUHK,MED,SBS,Stem cell,,,,,\r\nStephen DALTON,CUHK,MED,SBS,Stem cell,,,,,\r\nStephen Kwok Wing TSUI,CUHK,MED,SBS,Genetics,Bioinformatics,,,,\r\nSun On CHAN,CUHK,MED,SBS,Immunology,Signaling pathway,,,,\r\nVivas Hon Fai CHAN,CUHK,MED,SBS,Stem cell,,,,,\r\nWai Yee CHAN,CUHK,MED,SBS,Stem cell,Genetics,,,,\r\nWing Hung KO,CUHK,MED,SBS,Signaling pathway,,,,,\r\nWood Yee CHAN,CUHK,MED,SBS,Stem cell,Genetics,Epigenetics,,,\r\nWu Ming WANG,CUHK,MED,SBS,Cardivascuar,Stem Cell,Gene editing,,,\r\nXiao Hang LONG,CUHK,MED,SBS,Cancer,Immunotherapy,Liver cancer,Genomics,,\r\nXiao Hua JIANG,CUHK,MED,SBS,Stem cell,,,,,\r\nXiao Qiang YAO,CUHK,MED,SBS,Cardivascuar,Signaling pathway,Cancer,,,\r\nXiao Yu TIAN,CUHK,MED,SBS,Cardivascuar,,,,,\r\nYang Chao CHEN,CUHK,MED,SBS,Cancer,RNA,,,,\r\nYang Zi JIANG,CUHK,MED,SBS,Stem cell,,,,,\r\nYin XIA,CUHK,MED,SBS,Signaling pathway,,,,,\r\nNathalie  WONG,CUHK,MED,SUR,Genomic,Hepatocellular carcinoma,Signaling Pathway,Organoid,Crispr,\r\nLin Xian LI,CUHK,MED,SUR,mRNA delivery,,,,,\r\nXin WANG,CUHK,MED,SUR,Cancer,Bioinformatics,Genomics,miRNA,,\r\nHe Yang CUI,CUHK,MED,SUR,Esophageal cancer,Multi-omics,Genomics,,,\r\nDing Lan WU,CUHK,MED,SUR,Tumor Microenvironment,Prostate cancer,Immunotherapy,,,\r\nDerek Xian Feng XIA,CUHK,MED,SUR,Extracellular Vesicle,Immunotherapy,Stem cell,,,\r\nCelia Yu Juan DONG,CUHK,MED,SUR,Colorectal cancer,Epigenetics,mRNA,Signaling pathway,,\r\nRui LIAO,CUHK,MED,SUR,Car-T,Cell therapy,,,,\r\nAlissa Michelle Go WONG,CUHK,MED,SUR,Organoid,Hepatocellular carcinoma,Multi-omics,,,\r\nIris Ming Jing XU,CUHK,MED,SUR,Genomics,Hepatocellular carcinoma,,,,\r\nAllen Ka Loon CHEUNG,HKBU,SCI,BIOL,Immunology,Stem Cell,Δ42PD1,CD34+,,\r\nBi YANG,HKBU,SCI,BIOL,Signaling pathway,Genome Editing,Gene editing,,,\r\nChi Wai LEE,HKBU,SCI,BIOL,Mitochondrial,Synaptic,Signaling Pathway,,,\r\nJian Ming LI,HKBU,SCI,BIOL,Signaling pathway,,,,,\r\nJian Wen QIU,HKBU,SCI,BIOL,Genetics,,,,,\r\nLi Ming XIONG,HKBU,SCI,BIOL,RNA,Genomics,,,,\r\nPan LIAO,HKBU,SCI,BIOL,Anabolism,Binding affinity,,,,\r\nYi Ji XIA,HKBU,SCI,BIOL,RNA,NAD cap,Genetics,,,\r\nZhong Ying ZHAO,HKBU,SCI,BIOL,Signaling pathway,Genomics,,,,\r\nZhu YANG,HKBU,SCI,BIOL,Multi-omics,,,,,\r\nZora Baiying LI,HKBU,SCI,BIOL,Post translational modification ,,,,,\r\nAi Ping LYU,HKBU,SCM,SCM,Aptamer,TCM,Drug,Rheumatoid arthritis,,\r\nAnna Hiu Yee KWAN,HKBU,SCM,SCM,Extracellular vesicles ,Cancer,Endothelial,,,\r\nAshok IYASWAMY,HKBU,SCM,SCM,Alzheimer's Disease,Neurodegenerative diseases,TCM,,,\r\nCherry Li Feng LI,HKBU,SCM,SCM,Polysaccharide,TCM,,,,\r\nFang Fei LI,HKBU,SCM,SCM,Cancer,Drug,Aptamer,,,\r\nGe ZHANG,HKBU,SCM,SCM,Aptamer,Drug,TCM,Crispr,Gene editing,\r\nHai Tao LYU,HKBU,SCM,SCM,Multi-omics,Cancer,Drug,,,\r\nHong Jie ZHANG,HKBU,SCM,SCM,Cancer,HIV,HCV,Drug,,\r\nJin LIU,HKBU,SCM,SCM,Extracellular vesicles ,Aptamer,Drug,,,\r\nJoshua Ka Shun KO,HKBU,SCM,SCM,DNA vaccines,Drug,Tumor microenvironment,Cancer,,\r\nJun XU,HKBU,SCM,SCM,Gut microbiota,,,,,\r\nKenneth Chat Pan CHEUNG,HKBU,SCM,SCM,Immunology,T cell,Cancer,,,\r\nKing Ho CHEUNG,HKBU,SCM,SCM,Alzheimer's Disease,Neurodegenerative diseases,Signaling Pathway,Drug,,\r\nMin LI,HKBU,SCM,SCM,Alzheimer's Disease,Neurodegenerative diseases,TCM,,,\r\nPallavi ASTHANA,HKBU,SCM,SCM,Metabolic ,Drug,TCM,,,\r\nSimon Quan Bin HAN,HKBU,SCM,SCM,Polysaccharide,TCM,,,,\r\nWai Po CHONG,HKBU,SCM,SCM,Immunology,T cell,Immunity,,,\r\nXavier Hoi Leong WONG,HKBU,SCM,SCM,Metabolic ,Drug,TCM,,,\r\nYuan MA,HKBU,SCM,SCM,Aptamer,Drug,Cancer,Orthopedic diseases,,\r\nYuan Yuan YU,HKBU,SCM,SCM,Aptamer,Drug,,,,\r\nZhao Xiang BIAN,HKBU,SCM,SCM,Drug,IBD,,,,\r\nZhi Qiang DENG,HKBU,SCM,SCM,Alzheimer's Disease,Neurodegenerative diseases,TCM,,,\r\nZhi Ling YU,HKBU,SCM,SCM,Cancer,Inflammation,TCM,,,\r\nTerrence Kin Wah LEE,HKPU,SCI,ABCT,Cancer,Stem Cell,Drug,,,\r\nLarry Ming Cheung CHOW,HKPU,SCI,ABCT,Cancer,Drug,Parasitic Diseases,,,\r\nKwok Yin WONG,HKPU,SCI,ABCT,Antimicrobial,,,,,\r\nGary Ka Leung WONG,HKPU,SCI,ABCT,Cancer,,,,,\r\nDong Sheng LIU,HKPU,SCI,ABCT,DNA modification,RNA modification,circular mRNA,Epigenetics,Tissue engineering,\r\nYan Xiang ZHAO,HKPU,SCI,ABCT,Autophagy,Binding affinity,Cancer,,,\r\nZhong Ping YAO,HKPU,SCI,ABCT,Protein Structures,Multi-omics,,,,\r\nThomas Yun Chung LEUNG,HKPU,SCI,ABCT,Protein Engineering,Drug,,,,\r\nXin ZHAO,HKPU,SCI,ABCT,Tissue engineering,,,,,\r\nLei ZHOU,HKPU,SCI,ABCT,Proteomics,Metabolomics,Multi-omics,,,\r\nVincent Wee Keong KENG,HKPU,SCI,ABCT,Cancer,Genetics,,,,\r\nBen Chi Bun KO,HKPU,SCI,ABCT,Hepatocellular Carcinoma,Drug Discovery ,,,,\r\nWilson Chun Yu LAU,HKPU,SCI,ABCT,cryo-EM,Structural biology,,,,\r\nCong MA,HKPU,SCI,ABCT,Drug,,,,,\r\nQian ZHAO,HKPU,SCI,ABCT,Drug,Cancer,Metabolomics,Multi-omics,,\r\nQuan Hua MU,HKPU,SCI,ABCT,Cancer,Multi-omics,Bioinformatics,,,\r\nWilliam Chi Shing TAI,HKPU,SCI,ABCT,Cancer,Inflammatory,Exosomes,Drug ,,\r\nZhi Wu TAN,HKPU,SCI,ABCT,Tumor microenvironment,T cell,Immunity,Cancer,Immunotherapies,\r\nClarence Tsun Ting WONG,HKPU,SCI,ABCT,Immunotherapies,Protein Modification,,,,\r\nWing Leung WONG,HKPU,SCI,ABCT,Binding affinity,Drug ,,,,\r\nXiu Lian YU,HKPU,SCI,ABCT,cryo-EM,,,,,\r\nXian YANG,HKPU,SCI,ABCT,Variable Surface Glycoprotein,Structural biology,,,,\r\nLi Ping ZHOU,HKPU,SCI,ABCT,Chinese Medicine ,Stem cell,,,,\r\nXiang ZOU,HKPU,FHSS,HTI,Allergy,Vaccine,Immunology,Mast cell biology,,\r\nShea Ping YIP,HKPU,FHSS,HTI,Genetics,Blood cancers,,,,\r\nWei Xiong ZHANG,HKPU,FHSS,HTI,Genetics,Genomics,Cancer,,,\r\nPolly Hang Mei LEUNG,HKPU,FHSS,HTI,Cancer,,,,,\r\nGilman Kit Hang SIU,HKPU,FHSS,HTI,Antimicrobial,Infectious Diseases,,,,\r\nKenneth King Yip CHENG,HKPU,FHSS,HTI,Cardiovascular diseases,,,,,\r\nChien Ling HUANG,HKPU,FHSS,HTI,Haematology,Stem Cell,,,,\r\nLiang Ting LIN,HKPU,FHSS,HTI,Epigentic,Extracellular vesicles,,,,\r\nAlvin Chun Hang MA,HKPU,FHSS,HTI,Haematology,Autophagy,,,,\r\nChi Ming WONG,HKPU,FHSS,HTI,Diabetes,,,,,\r\nDavid Yin CAI,HKPU,FHSS,HTI,Metabolomics,,,,,\r\nKeith Cheuk Lun LEE,HKPU,FHSS,HTI,Stem cell,Extracellular vesicles,,,,\r\nGloria Hoi Yee LI,HKPU,FHSS,HTI,Genetics,Bioinformatics,,,,\r\nJerry Jun Yi CHEN,HKPU,FHSS,HTI,Genetics,Sing Cell,Bioinformatics,,,\r\nFranklin Wang Ngai CHOW,HKPU,FHSS,HTI,Infectious Diseases,,,,,\r\nDa DI,HKPU,FHSS,HTI,Infectious Diseases,,,,,\r\nHui Ge LIN,HKPU,FHSS,HTI,Metabolomics,Proteomics,,,,\r\nSulaiman Jordy Evan,HKPU,FHSS,HTI,Metabolomics,,,,,\r\nQing XIONG,HKPU,FHSS,HTI,Bioinformatics,Infectious Diseases,Allergy,Genomics,,\r\nMartin Ho Yin YEUNG,HKPU,FHSS,HTI,Metabolomics,,,,,\r\nThomas LAM,HKPU,FHSS,SO,Multi-omics,,,,,\r\nJennifer BIAN,HKPU,FHSS,SO,Multi-omics,,,,,\r\nBin LIN,HKPU,FHSS,SO,Multi-omics,Stem Cell,,,,\r\nFeng PAN,HKPU,FHSS,SO,Multi-omics,Stem Cell,,,,\r\nHenry Ho Lung CHAN,HKPU,FHSS,SO,Multi-omics,,,,,\r\nDennis TSE,HKPU,FHSS,SO,Multi-omics,,,,,\r\nSamuel ABOKYI,HKPU,FHSS,SO,Stem Cell,,,,,\r\nEllen TAN,HKPU,FHSS,SO,Stem Cell,,,,,\r\nCheng Fei ZHANG,HKU,DENT,DENT,Stem cell,,,,,\r\nEdmond Ho Nang POW,HKU,DENT,DENT,Nasopharyngeal carcinoma,Stem cell,,,,\r\nGao ZHANG,HKU,DENT,DENT,Cancer,Genomics,Systems Biology,Bioinformatics,,\r\nJade Lee Lee TENG,HKU,DENT,DENT,Organoid,Microbiome,,,,\r\nJohn Jun Wen WANG,HKU,DENT,DENT,Bioinformatics,Systems Biology,Drug,,,\r\nPeng GAO,HKU,DENT,DENT,Microbiome,Antimicrobial ,,,,\r\nRory Munro WATT,HKU,DENT,DENT,Microbiome,Genomics,Protein Structure,,,\r\nSang Jin LEE,HKU,DENT,DENT,Stem cell,,,,,\r\nShi HUANG,HKU,DENT,DENT,Metagenomics,Microbiome,,,,\r\nWaruna Lakmal DISSANAYAKA,HKU,DENT,DENT,Stem Cell,,,,,\r\nYu DENG,HKU,DENT,DENT,Microbiome,Antibiotic,,,,\r\nZhao Ming WU,HKU,DENT,DENT,Signaling pathway,,,,,\r\nTong ZHANG,HKU,ENGG,CIVIL,Antibiotic Resistance,,,,,\r\nChi Wai CHEUNG,HKU,MED,ANAES,Neuropathic pain,Sing Cell,Sing cell RNA-Seq,Immunohistochemistry,,\r\nStanley Sau Ching WONG,HKU,MED,ANAES,Signaling pathway,,,,,\r\nGordon Tin Chun WONG,HKU,MED,ANAES,Neuroinflammation,,,,,\r\nBo Ya LIAO,HKU,MED,ANAES,Diabetic neuropathy,Metabolic,Binding affinity,Antibody,,\r\nGill Harinder Harry SINGH ,HKU,MED,MED,Pluripotent Stem Cell,Haematology,T cell ,NK cell,Genetics,\r\nHung Fat TSE,HKU,MED,MED,Pluripotent Stem Cell,immuotherpay,Crispr,,,\r\nAnskar Yu Hung LEUNG,HKU,MED,MED,Haematology,Acute myeloid leukaemia,Sing cell RNA-Seq,Signaling pathway,,\r\nSydney Chi Wai TANG,HKU,MED,MED,Signaling pathway,,,,,\r\nMan Fung YUEN,HKU,MED,MED,Hepatitis B,,,,,\r\nDaniel Tak Mao CHAN,HKU,MED,MED,Hepatitis C ,,,,,\r\nYok Lam KWONG,HKU,MED,MED,Pluripotent Stem Cell,Haematology,T cell ,NK cell,Genetics,\r\nChak Sing LAU,HKU,MED,MED,Stem cell,Crispr,Immunology,,,\r\nAi Min XU,HKU,MED,MED,Signaling pathway,Drug Discovery ,Antibody,,,\r\nKoon Ho CHAN,HKU,MED,MED,Signaling pathway,Immunohistochemistry,Crispr,,,\r\nKathryn Choon Beng TAN,HKU,MED,MED,Post-translational modification,,,,,\r\nEric Wai Choi TSE,HKU,MED,MED,Haematology,NK cell,T cell,B cell,Signaling pathway,\r\nJames Chung Man HO,HKU,MED,MED,Immune response,,,,,\r\nDavid Chi Leung LAM,HKU,MED,MED,Organoid,Lung cancer,,,,\r\nSusan Sou Ying YUNG,HKU,MED,MED,microRNA,,,,,\r\nShirley Chiu Wai CHAN,HKU,MED,MED,Autoimmune diseases,,,,,\r\nPhilip Hei LI,HKU,MED,MED,Stem cell,Crispr,Immunology,Allergy ,,\r\nLoey Lung Yi MAK,HKU,MED,MED,hepatitis C,,,,,\r\nIris Yan Ki TANG,HKU,MED,MED,Connective tissue diseases,,,,,\r\nChun Ka WONG,HKU,MED,MED,Pluripotent Stem Cell,,,,,\r\nShuo Feng YUAN,HKU,MED,MICRO,Airway Epithelial ,Single-cell RNA-seq,Drug screening,Immunohistochemistry,FISH,\r\nKwok Yung YUEN,HKU,MED,MICRO,Immune response,Spatial transcriptomics ,Immunohistochemistry,,,\r\nAnna Jin Xia ZHANG,HKU,MED,MICRO,Immune response,Spatial transcriptomics ,Immunohistochemistry,,,\r\nRaven Kin Hang KOK,HKU,MED,MICRO,Single-cell RNA-seq,Crispr,Immune response,Signaling pathway,,\r\nKelvin Kai Wang TO,HKU,MED,MICRO,Airway Epithelial ,Immune response,Immunohistochemistry,,Vaccine,\r\nHin CHU,HKU,MED,MICRO,Spatial transcriptomics ,Immunohistochemistry,Binding affinity,,,\r\nVivian Hui Ping SHUAI,HKU,MED,MICRO,Multi-omics,Immune response,Binding affinity,,,\r\nHong Lin CHEN,HKU,MED,MICRO,Immune response,Immunohistochemistry,,,,\r\nZhi Wei CHEN,HKU,MED,MICRO,Immune response,Immunology,Sing cell RNA-Seq,Vaccine,Immunotherapy,\r\nRun Hong ZHOU,HKU,MED,MICRO,Dendritic cell,HIV,Immunotherapy,Immun response,,\r\nRichard Yi Tsun KAO,HKU,MED,MICRO,Antimicrobial,Antibiotic,,,,\r\nPhilip Man Lung YEUNG,HKU,MED,MICRO,Cryo-EM,Organoid,,,,\r\nCun LI,HKU,MED,MICRO,Genomics,Organoid,,,,\r\nJane Jie ZHOU,HKU,MED,MICRO,Genomics,Organoid,Airway Epithelia,,,\r\nJasper Fuk Woo CHAN,HKU,MED,MICRO,Immune response,Immunology,Sing cell RNA-Seq,Vaccine,Immunotherapy,\r\nSiddharth SRIDHAR,HKU,MED,MICRO,Hepatitis E,Genomics,,,,\r\nPak Leung HO,HKU,MED,MICRO,Antibiotic resistance,Genomics,Antimicrobial resistance,,,\r\nKui LIU,HKU,MED,OBSGYN,Genomics,Germ cell,,,,\r\nNan Hao LU,HKU,MED,OBSGYN,Genomics,Epithelial ovarian cancer,Membrane protein,mAbs,Immunotherapy,\r\nWilliam Shu Biu YEUNG,HKU,MED,OBSGYN,Stem Cell,Immunology,Mammary Epithelial Cell,Signaling pathway,,\r\nKa Yu TSE,HKU,MED,OBSGYN,Immunotherapy,,,,,\r\nPhilip Chi Ngong CHIU,HKU,MED,OBSGYN,Stem Cell,Immunology,MicroRNA,Organoid,,\r\nRachel WS CHAN,HKU,MED,OBSGYN,Stem Cell,Immunology,Mammary Epithelial Cell,Signaling pathway,,\r\nCalvin Kai Fai LEE,HKU,MED,OBSGYN,Signaling pathway,miRNA,Genomics,MicroRNA,Organoid,\r\nAndy Chun Hang CHEN,HKU,MED,OBSGYN,Pluripotent Stem Cell,Stem cell,MicroRNA,Epigenetics,,\r\nValen Zhuo You YU,HKU,MED,ONCOLOGY,,,,,,\r\nXin Yuan GUAN,HKU,MED,ONCOLOGY,Hepatocellular carcinomas,Tumor microenvironment,Sing cell RNA-Seq,Stem cell,,Immunology\r\nVictor Ho Fun LEE,HKU,MED,ONCOLOGY,Lung cancer,Tumor microenvironment,Sing cell RNA-Seq,Genetics,,\r\nDora Lai Wan KWONG,HKU,MED,ONCOLOGY,Gastric caner,Genetics,,,,\r\nWei DAI,HKU,MED,ONCOLOGY,Genomics,Epigenetics,Bioinformatics,Squamous cell carcinoma,,\r\nJosephine Mun Yee KO,HKU,MED,ONCOLOGY,NGS,,,,,\r\nSpring Feng Ming KONG,HKU,MED,ONCOLOGY,Lung cancer,Immunotherapy,Spatial Biology,Signaling pathway,,T cell\r\nChi Leung CHIANG,HKU,MED,ONCOLOGY,Immunotherapy,,,,,\r\nAya El  HELALI,HKU,MED,ONCOLOGY,NGS,Immunity,Genomics,T cell,,\r\nMatthew Kin Liang CHIU,HKU,MED,ONCOLOGY,Tumor microenvironment,Immunotherapy,T cell,NGS,,Immunohistochemistry\r\nZe Zhuo SU,HKU,MED,ORTHO,Single-cell RNA-seq,Spatial Biology,Immunohistochemistry,,,\r\nYiu Fai CHEUNG,HKU,MED,PAED,Pluripotent Stem Cell,Genomics,Single-cell RNA-seq,,,\r\nYu Lung LAU,HKU,MED,PAED,Immunology,Immunodeficiency,,,,\r\nWen Wei TU,HKU,MED,PAED,Immunology,Extracellular Vesicles,EBV,T cell,miRNA,\r\nDaniel Ka Leung CHEUK,HKU,MED,PAED,Acute myeloid leukemia,Hematopoietic stem cell,Cell therapy,T cell,Immunotherapy,\r\nAlan Kwok Shing CHIANG,HKU,MED,PAED,EBV,Immunology,Signaling Pathway,,,\r\nBrian Hon Yin CHUNG,HKU,MED,PAED,Multi-omics,Genomics,,,,\r\nPamela Pui Wah LEE,HKU,MED,PAED,Hematopoietic stem cell,Immunology,,,,\r\nSiu Yuen CHAN,HKU,MED,PAED,Developmental Biology,Signaling Pathway,,,,\r\nJaime S ROSA DUQUE,HKU,MED,PAED,Immunology,T cell,,,,\r\nCarmen Chak Lui WONG,HKU,MED,PATHO,Hepatocellular carcinomas,Tumor microenvironment,Signaling Pathway,Crispr,,\r\nJack Chun Ming WONG,HKU,MED,PATHO,Cancer,Genetics,Signaling Pathway,Crispr,Tumor Microenvironment,\r\nKen Hoi Tang MA,HKU,MED,PATHO,Liver cancer,Post-translation modification,Signaling Pathway,,,\r\nLi Wei LU,HKU,MED,PATHO,Immunology,Lymphocyte,B cell,,,\r\nIrene Oi Lin NG,HKU,MED,PATHO,Liver cancer,Genomics,Signaling Pathway,Sing cell RNA seq,Whole exsome sequencing,\r\nUi Soon KHOO,HKU,MED,PATHO,Breast cancer,Genomics,Signaling Pathway,Whole exsome sequencing,,\r\nAnnie Nga Yin CHEUNG,HKU,MED,PATHO,Signaling pathway,Epigenetics,Genomics,Gynaecological cancer,,\r\nJudy Wai Ping YAM,HKU,MED,PATHO,Liver cancer,Extracellular vesicles,Tumor Microenvironment,Signaling pathway,Immunohistochemistry,\r\nRegina Cheuk Lam LO,HKU,MED,PATHO,Cancer,Tumor microenvironment,Signaling Pathway,,,\r\nDaniel Wai Hung HO,HKU,MED,PATHO,Spatial transcriptomics,Single-cell RNA-seq,Multi-omics,Genomics,,\r\nHelen Hoi Ning YAN,HKU,MED,PATHO,Organoid,Multi-omics,Tumor microenvironment,Cancer,,\r\nSuet Yi LEUNG,HKU,MED,PATHO,Organoid,Multi-omics,Tumor microenvironment,Cancer,,\r\nPhilip Pun Ching IP,HKU,MED,PATHO,Sarcoma,Whole exsome sequencing,Immunohistochemistry,Signaling pathway,Crispr,\r\nMaximus Chun Fai YEUNG,HKU,MED,PATHO,Multi-omics,Single-cell RNA-seq,,,,\r\nKhuloud T Al-Jamal,HKU,MED,PHARMA,Immunotherapy,Crispr,Signaling Pathway,Extracellular vesicles,Stem cell,\r\nWe JIA,HKU,MED,PHARMA,Metabolomics,Gut microbiota,,,,\r\nYu WANG,HKU,MED,PHARMA,Signaling pathway,Drug Discovery ,,,,\r\nAmber Xiao Ping WU,HKU,MED,PHARMA,Nature Product,Cancer,Signaling Pathway,,,\r\nShan ZHANG,HKU,MED,PHARMA,Multi-omics,,,,,\r\nZhong Yan ZHOU,HKU,MED,PHARMA,Traditional Chinese Medicine,,,,,\r\nClara Bik San LAU,HKU,MED,PHARMA,Nature Product,,,,,\r\nRuby Lai Chong HOO,HKU,MED,PHARMA,Signaling pathway,Binding affinity,,,,\r\nChing Lung CHEUNG,HKU,MED,PHARMA,Multi-omics,,,,,\r\nWei Ping WANG,HKU,MED,PHARMA,Signaling pathway,,,,,\r\nGeorge Pak Heng LEUNG,HKU,MED,PHARMA,Nature Product,,,,,\r\nAlex Xiang LIN,HKU,MED,SCM,Autoimmune disease ,Immunology,T cell,B cell,,\r\nMichael Ning WANG,HKU,MED,SCM,Cancer,cfDNA,Immunotherapy,Genomics,Crispr,FISH\r\nYi Bin FENG,HKU,MED,SCM,Cancer,cfDNA,Immunotherapy,Genomics,Crispr,FISH\r\nZhang Jin zhang,HKU,MED,SCM,Signaling pathway,,,,,\r\nJian Gang SHEN,HKU,MED,SCM,Signaling pathway,Extracellular vesicle,,,,\r\nJian Hui RONG,HKU,MED,SCM,Signaling pathway,,,,,\r\nHai Yong CHEN,HKU,MED,SCM,Signaling pathway,Immunology,Gene therapy,,,\r\nMichael Chi Wai CHAN,HKU,MED,SPH,Human airway Organoid,Immune response,,,,\r\nVijaykrishna DHANASEKARAN,HKU,MED,SPH,,,,,,\r\nTommy Tsan Yuk LAM,HKU,MED,SPH,Genomics,,,,,\r\nSook San WONG,HKU,MED,SPH,Immunology,B cell,T cell,,,\r\nYi GUAN,HKU,MED,SPH,Genomics,,,,,\r\nJoseph Sriyal Malik PEIRIS,HKU,MED,SPH,Genomics,Immune response,,,,\r\nLeo Lit Man POON,HKU,MED,SPH,Genomics,Bulk RNA sequencing,Immune response,Vaccine,,\r\nRoberto BRUZZONE,HKU,MED,SPH,,,,,,\r\nHui Ling YEN,HKU,MED,SPH,Immune response,,,,,\r\nMaria Hua Chen ZHU,HKU,MED,SPH,Genomics,,,,,\r\nKenrie Pui Yan HUI,HKU,MED,SPH,Human airway Organoid,Immune response,,,,\r\nMark ZANIN,HKU,MED,SPH,Immunology,Signaling pathway,,,,\r\nAlex Wing Hong CHIN,HKU,MED,SPH,Genomics,Bulk RNA sequencing,Immune response,Vaccine,,\r\nPaul David BLAKELEY,HKU,MED,SUR,Sing Cell RNA seq,Signaling pathway,Stem cell,,,\r\nJiang LIU,HKU,MED,SUR,Immunology,Multi-omics,,,,\r\nSze Keong TEY,HKU,MED,SUR,Tumor microenvironment,Extracellular vesicles,Genomics,Signaling pathway,,\r\nNancy Kwan MAN,HKU,MED,SUR,Cancer,Immunology,Genomics,Signaling pathway,,\r\nAva KWONG,HKU,MED,SUR,Breast cancer,Genomics,,,,\r\nGilberto Ka Kit LEUNG,HKU,MED,SUR,Brain tumor,Immunohistochemistry,Genomics,Signaling pathway,,\r\nKarrie Mei Yee KIANG,HKU,MED,SUR,Brain tumor,Immunohistochemistry,Genomics,Signaling pathway,,\r\nElly Sau Wai NGAN,HKU,MED,SUR,Stem Cell,Organoid,Genomics,Signaling pathway,,\r\nVincent Chi Hang LUI,HKU,MED,SUR,Organoid,Genomics,Signaling pathway,,,\r\nClara Sze Man TANG,HKU,MED,SUR,Genomics,,,,,\r\nXue Chen LI,HKU,SCI,CHEM,Post-Translational Modifications,Drug Discovery,Binding affinity,,,\r\nHai Bo JIANG,HKU,SCI,CHEM,Metabolomics,,,,,\r\nYing LI,HKU,SCI,CHEM,RNA modification,Binding affinity,,,,\r\nDavid Xiang LI,HKU,SCI,CHEM,Post-Translational Modifications,Drug Discovery,Binding affinity,Epigenetics,Proteomics,\r\nChi Ming CHE,HKU,SCI,CHEM,Drug Discovery,,,,,\r\nHong Zhe SUN,HKU,SCI,CHEM,Antibiotic resistance,Drug Discovery,Immuity,,,\r\nXiao Yu LI,HKU,SCI,CHEM,Drug discovery,DNA-encoded library,Binding affinity,,,\r\nPhilip Yong Xin LI,HKU,SCI,CHEM,Natural Products,Genomics,Gut Microbiota,,,\r\nAi Xin YAN,HKU,SCI,SBS,Antimicrobial Resistance,CRISPR,,,,\r\nAndy KM LAM,HKU,SCI,SBS,cryo-EM,Protein structure,,,,\r\nAlice Sze Tsai WONG,HKU,SCI,SBS,Exosomes,Cancer,Signaling pathway,Tumor microenvironment,Immunohistochemistry,\r\nBilly Kwok Chong CHOW,HKU,SCI,SBS,Genetics,Signaling pathway,,,,\r\nChao Gu ZHENG,HKU,SCI,SBS,Genomics,CRISPR,System biology,,,\r\nChi Bun CHAN,HKU,SCI,SBS,Signaling pathway,,,,,\r\nClive Sze Chung LO,HKU,SCI,SBS,Plant,,,,,\r\nGary Ying Wai CHAN,HKU,SCI,SBS,Genomics,CRISPR,Crispr,,,\r\nHeath Ellis JOHNSON,HKU,SCI,SBS,Developmental biology,,,,,\r\nKaren Wing Yee YUEN,HKU,SCI,SBS,Epigenetics,Cancer,Signaling pathway,CRISPR,System biology,\r\nNan LIU,HKU,SCI,SBS,cryo-EM,Protein structure,,,,\r\nPeng WANG,HKU,SCI,SBS,Plant,Signaling pathway,Binding affinity,,,\r\nQiang ZHOU,HKU,SCI,SBS,Epigenetics,Signaling pathway,,,,\r\nWallace Boon Leong LIM,HKU,SCI,SBS,Plant Organelle,Plant Organelle,,,,\r\nHenry Hei Ning LAM,HKUST,SENG,CBE,Bioinformatics,,,,,\r\nFei SUN,HKUST,SENG,CBE,Axon Regeneration,,,,,\r\nBecki Yi KUANG,HKUST,SENG,CBE,Protein Structure,,,,,\r\nBonnie Dan Qing ZHU,HKUST,SENG,CBE,Sing Cell,Sequencing,Crispr,,,\r\nAmy Kit Yu FU,HKUST,SCI,LIFESCI,APOE,,,,,\r\nAngela Ruo Hao WU,HKUST,SCI,LIFESCI,Gene editing,,,,,\r\nChun Liang LIANG,HKUST,SCI,LIFESCI,Drug ,,,,,\r\nDanny Chi Yeu LEUNG,HKUST,SCI,LIFESCI,Epigenetics,,,,,\r\nDavid Karl BANFIELD,HKUST,SCI,LIFESCI,Signaling Pathway,,,,,\r\nGuang ZHU,HKUST,SCI,LIFESCI,Protein Structure,Cancer,,,,\r\nGuo Jun BU,HKUST,SCI,LIFESCI,APOE,Metabolomics,Signaling,,,\r\nHiu Yi WONG,HKUST,SCI,LIFESCI,Immunology,,,,,\r\nHo Yi MAK,HKUST,SCI,LIFESCI,Orgnaelle,,,,,\r\nHyo Keun PARK,HKUST,SCI,LIFESCI,cryo-EM,,,,,\r\nJie WANG,HKUST,SCI,LIFESCI,Crispr,Stem cell,,,,\r\nJi Guang WANG,HKUST,SCI,LIFESCI,Genomics,Single Cell RNA Seq,Multi-omics,,,\r\nJulie SEMMELHACK,HKUST,SCI,LIFESCI,Gene editing,,,,,\r\nKai LIU,HKUST,SCI,LIFESCI,Axon Regeneration ,,,,,\r\nKarl Wah Keung TSIM,HKUST,SCI,LIFESCI,Drug ,,,,,\r\nKenny CHUNG,HKUST,SCI,LIFESCI,,,,,,\r\nKing Lau CHOW,HKUST,SCI,LIFESCI,,,,,,\r\nLan WANG,HKUST,SCI,LIFESCI,,,,,,\r\nLi Sheng ZHANG,HKUST,SCI,LIFESCI,RNA,Bioformatics,Genetics,Immunology,,Sequencing\r\nNancy Yuk Yu IP,HKUST,SCI,LIFESCI,Signaling,APOE,,,,\r\nPing Bo HUANG,HKUST,SCI,LIFESCI,,,,,,\r\nRandy Yat Choi POON,HKUST,SCI,LIFESCI,Gene editing,siRNA,Cancer,,,\r\nRen Jun TU,HKUST,SCI,LIFESCI,,,,,,\r\nRobert Kam Ming KO,HKUST,SCI,LIFESCI,,,,,,\r\nRobert Zhong QI,HKUST,SCI,LIFESCI,Cancer,,,,,\r\nShang Yu DANG,HKUST,SCI,LIFESCI,cryo-EM,Membrane proteins,protein-DNA,,,\r\nTing XIE,HKUST,SCI,LIFESCI,Stem Cell,Single Cell RNA Seq,Multi-omics,,,\r\nTom Hiu Tung CHEUNG,HKUST,SCI,LIFESCI,Alzheimer’s disease,Single Cell RNA Seq,,,,\r\nToyotaka ISHIBASHI,HKUST,SCI,LIFESCI,Chromatin structure,,,,,\r\nTuan Anh NGUYEN,HKUST,SCI,LIFESCI,RNA,,,,,\r\nYan YAN,HKUST,SCI,LIFESCI,Cancer,,,,,\r\nYukinori HIRANO,HKUST,SCI,LIFESCI,,,,,,\r\nYi MIAO,HKUST,SCI,LIFESCI,Gene editing,Stem cell,,,,\r\nYung Hou WONG,HKUST,SCI,LIFESCI,,,,,,\r\nYu Song GUO,HKUST,SCI,LIFESCI,,,,,,\r\nZhen LIU,HKUST,SCI,LIFESCI,Airway epithelium,Immunity,Organelle,,,\r\nYuan Liang ZHAI,HKUST,SCI,LIFESCI,,,,,,\r\nZhen Guo WU,HKUST,SCI,LIFESCI,Stem Cell,,,,,\r\nCharmaine Cheuk Man YUNG,HKUST,SCI,OCES,,,,,,\r\nQiong ZHANG,HKUST,SCI,OCES,,,,,,\r\nMasayuki USHIO,HKUST,SCI,OCES,,,,,,\r\nPei Yuan QIAN,HKUST,SCI,OCES,,,,,,\r\nQing Lu ZENG,HKUST,SCI,OCES,,,,,,\r\nStanley Chun Kwan LAU,HKUST,SCI,OCES,,,,,,\r\nChen HUANG,MUST,MSD,FCM,,,,,,\r\nGuo Yuan ZHU,MUST,MSD,FCM,,,,,,\r\nHai Jie YU,MUST,MSD,FCM,,,,,,\r\nJian Lin WU,MUST,MSD,FCM,,,,,,\r\nJiang Zhi HONG,MUST,MSD,FCM,,,,,,\r\nJue WANG,MUST,MSD,FCM,,,,,,\r\nKam Wai WONG,MUST,MSD,FCM,,,,,,\r\nLai Han LEUNG,MUST,MSD,FCM,,,,,,\r\nLi Juan MA,MUST,MSD,FCM,,,,,,\r\nLi Li YU,MUST,MSD,FCM,,,,,,\r\nLi Ping BAI,MUST,MSD,FCM,,,,,,\r\nMi Shan WU,MUST,MSD,FCM,,,,,,\r\nMin CHEN,MUST,MSD,FCM,,,,,,\r\nNa LI,MUST,MSD,FCM,,,,,,\r\nNa ZHOU,MUST,MSD,FCM,,,,,,\r\nPaolo Saul Coghi,MUST,MSD,FCM,,,,,,\r\nPei LUO,MUST,MSD,FCM,,,,,,\r\nQiang WU,MUST,MSD,FCM,,,,,,\r\nQiu Yu LIANG,MUST,MSD,FCM,,,,,,\r\nTing LI,MUST,MSD,FCM,,,,,,\r\nWei Ping CHEN,MUST,MSD,FCM,,,,,,\r\nWei ZHANG,MUST,MSD,FCM,,,,,,\r\nWen Zhe MA,MUST,MSD,FCM,,,,,,\r\nQi Biao WU,MUST,MSD,FCM,,,,,,\r\nXiao Lin WANG,MUST,MSD,FCM,,,,,,\r\nXiao Ming ZHU,MUST,MSD,FCM,,,,,,\r\nXin ZHANG,MUST,MSD,FCM,,,,,,\r\nXin Zhi LI,MUST,MSD,FCM,,,,,,\r\nXing Xing FU,MUST,MSD,FCM,,,,,,\r\nYan Pei Yu,MUST,MSD,FCM,,,,,,\r\nYao Xiao JUN,MUST,MSD,FCM,,,,,,\r\nYou Hua XU,MUST,MSD,FCM,,,,,,\r\nYu LI,MUST,MSD,FCM,,,,,,\r\nYuen Kwan LAW,MUST,MSD,FCM,,,,,,\r\nZeng LI,MUST,MSD,FCM,,,,,,\r\nZhi Feng ZHANG,MUST,MSD,FCM,,,,,,\r\nZhu Yi ZHUN,MUST,MSD,FCM,,,,,,\r\nLi ZENG,MUST,MSD,SP,,,,,,\r\nNa ZHOU,MUST,MSD,SP,,,,,,\r\nPaolo Saul Coghi,MUST,MSD,SP,,,,,,\r\nPei LUO,MUST,MSD,SP,,,,,,\r\nPei Yu YAN,MUST,MSD,SP,,,,,,\r\nQi Biao WU,MUST,MSD,SP,,,,,,\r\nQian DING,MUST,MSD,SP,,,,,,\r\nQIang WU,MUST,MSD,SP,,,,,,\r\nXi Qing BIAN,MUST,MSD,SP,,,,,,\r\nXiao Jun YAO,MUST,MSD,SP,,,,,,\r\nXing Xing FAN,MUST,MSD,SP,,,,,,\r\nYe LI,MUST,MSD,SP,,,,,,\r\nYi Zhun ZHU,MUST,MSD,SP,,,,,,\r\nZhi Hong JIANG,MUST,MSD,SP,,,,,,\r\nChu Xia DENG,UM,FHS,BMS,Oncogenes,Drug Development,Tumor Suppressor Genes,Drug Development,,\r\nWei GE,UM,FHS,BMS,Genome Editing,Drug Discovery,,,,\r\nHan Ming SHEN,UM,FHS,BMS,Cancer Metabolism,,,,,\r\nRen He XU,UM,FHS,BMS,Pluripotent Stem Cell,,,,,\r\nGuo Kai CHEN,UM,FHS,BMS,Pluripotent Stem Cell,,,,,\r\nEdwin Chong Wing CHEUNG,UM,FHS,BMS,Cancer ,,,,,\r\nHenry Hang Fai KWOK,UM,FHS,BMS,Cancer Biomarkers,Immunotherapy,,,,\r\nElaine Lai Han LEUNG,UM,FHS,BMS,Gut Microbiota,Cancer Biomarkers ,Cancer,Drug Discovery,,\r\nDuncan Chung Hang LEUNG,UM,FHS,BMS,,,,,,\r\nKathy Qian LUO,UM,FHS,BMS,Aging,,,,,\r\nGyeong Hun BAEG,UM,FHS,BMS,Stem Cells ,Signaling,,,,\r\nWilliam Chong Hang CHAO,UM,FHS,BMS,Protein Structure,,,,,\r\nLi Jun DI,UM,FHS,BMS,Metastasis,Tumor Metabolism,Tumor Microenvironment,,,\r\nLeo Tsz On LEE,UM,FHS,BMS,Cancer ,RNA Drugs,,,,\r\nGang LI,UM,FHS,BMS,Signal,Epigenetics,,,,\r\nTzu Ming LIU,UM,FHS,BMS,,,,,,\r\nTerence Chuen Wai POON,UM,FHS,BMS,Proteomics,Cancer,,,,\r\nNing Yi SHAO,UM,FHS,BMS,Epigenetics,Multi-omics,,,,\r\nVivien Ya-Fan WANG,UM,FHS,BMS,Post-Translational Modifications,,,,,\r\nChris Koon Ho WONG,UM,FHS,BMS,Cancer,,,,,\r\nRui Yu XIE,UM,FHS,BMS,Cancer,Epigenetics,,,,\r\nQi ZHAO,UM,FHS,BMS,Antibody-based Therapeutics,,,,,\r\nWakam CHANG,UM,FHS,BMS,,,,,,\r\nQi Han CHEN,UM,FHS,BMS,Epigenetics,,,,,\r\nQiang CHEN,UM,FHS,BMS,Tumor Suppressor Genes,Cancer Metabolism,Metabolic Diseases,Inflammatory Diseases,,\r\nAi Fang CHENG,UM,FHS,BMS,,,,,,\r\nCheong Meng CHONG,UM,FHS,BMS,,,,,,\r\nXiao Fan DING,UM,FHS,BMS,Cancer,Epigenetics,Genomics,,,\r\nKa Wai Fung,UM,FHS,BMS,,,,,,\r\nEdwin Ka Yiu KONG,UM,FHS,BMS,Protein Quality Control,Genomics,PROTAC,,,\r\nKai MIAO,UM,FHS,BMS,Tumor Metastasis,,,,,\r\nChen MING,UM,FHS,BMS,Neurodegenerative Diseases,Spatial Transcriptomic Analysis,Bioinformatics,Genetics,,\r\nZheng Hai TANG,UM,FHS,BMS,Cancer,,,,,\r\nLi WANG,UM,FHS,BMS,Cancer Metabolism,,,,,\r\nXin CHEN,UM,FHS,PHARM,Immunology,Immunotherapy,Cancer,Autoimmunity,,\r\nXiu Ping CHEN,UM,FHS,PHARM,,,,,,\r\nPeng LI,UM,FHS,PHARM,Metabolomics,,,,,\r\nJin Jian LU,UM,FHS,PHARM,,,,,,\r\nHuan Xing SU,UM,FHS,PHARM,Neurodegenerative diseases,,,,,\r\nRu YAN ,UM,FHS,PHARM,Metagenomics,,,,,\r\nWen Hua ZHENG,UM,FHS,PHARM,Neurodegenerative diseases,Drug Development,,,,\r\nCheng Wei HE,UM,FHS,PHARM,,,,,,\r\nMaggie Pui Man HOI ,UM,FHS,PHARM,Inflammatory responses,,,,,\r\nKevin Yue LI,UM,FHS,PHARM,Drug Discovery,Genetics,Genomics,Proteomics,,Metabolomics\r\nLI Gen LIN,UM,FHS,PHARM,Drug Discovery,,,,,\r\nJia Hong LU,UM,FHS,PHARM,Proteomics,Drug Discovery,,,,\r\nJoong Sup SHIM,UM,FHS,PHARM,Genetic,Tumor Suppressor Genes,,,,\r\nKin Yip TAM,UM,FHS,PHARM,Alzheimer's disease,Drug Discovery,,,,\r\nEmily Ying WANG,UM,FHS,PHARM,Signal ,,,,,\r\nChon Kit CHOU,UM,FHS,PHARM,Cancer,Autoimmune diseases,,,,\r\nSusan Xiao Wen MAO,UM,FHS,PHARM,Cancer,Exosomes,,,,\r\nHe SONG,UM,FHS,PHARM,Drug Discovery,,,,,\r\nZhang Feng ZHONG,UM,FHS,PHARM,Extracellular vesicles,,,,,\r\nJiang XIA,CUHK,SCI,CHEM,Exosomes,,,,,"};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+        </script><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Researcher Information System</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.8.1/prop-types.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
+  <script src="https://unpkg.com/papaparse@latest/papaparse.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <div id="root"></div>
+  <script type="text/babel">
+    // Initializing React root
+    const { createRoot } = ReactDOM;
+    const root = createRoot(document.getElementById('root'));
+
+    // Main App component
+    const App = () => {
+      // Setting up state for data and filters
+      const [data, setData] = React.useState([]);
+      const [filteredData, setFilteredData] = React.useState([]);
+      const [loading, setLoading] = React.useState(true);
+      const [searchPI, setSearchPI] = React.useState('');
+      const [selectedInstitute, setSelectedInstitute] = React.useState('');
+      const [selectedFaculty, setSelectedFaculty] = React.useState('');
+      const [selectedDepartment, setSelectedDepartment] = React.useState('');
+      const [selectedResearch, setSelectedResearch] = React.useState('');
+
+      // Loading and parsing CSV data
+      React.useEffect(() => {
+        const csvData = loadFileData('AC U.csv');
+        Papa.parse(csvData, {
+          header: true,
+          skipEmptyLines: true,
+          transformHeader: header => header.trim().replace(/^"|"$/g, ''),
+          transform: (value, header) => value.trim().replace(/^"|"$/g, ''),
+          complete: (results) => {
+            const cleanedData = results.data.map(row => ({
+              PI: row['PI'] || '',
+              Institute: row['Institute'] || '',
+              Faculty: row['Faculty'] || '',
+              Department: row['Department/School'] || '',
+              Research: [
+                row['Research 1'] || '',
+                row['Research 2'] || '',
+                row['Research 3'] || '',
+                row['Research 4'] || '',
+                row['Research 5'] || '',
+                row['Research 6'] || ''
+              ].filter(r => r)
+            }));
+            setData(cleanedData);
+            setFilteredData(cleanedData);
+            setLoading(false);
+          },
+          error: (err) => {
+            console.error('Error parsing CSV:', err);
+            setLoading(false);
+          }
+        });
+      }, []);
+
+      // Extracting unique values for filter dropdowns based on filtered data
+      const availableInstitutes = [...new Set(filteredData.map(item => item.Institute))].sort();
+      const availableFaculties = [...new Set(filteredData.map(item => item.Faculty))].sort();
+      const availableDepartments = [...new Set(filteredData.map(item => item.Department))].sort();
+      const availableResearchAreas = [...new Set(filteredData.flatMap(item => item.Research))].sort();
+
+      // Handling filtering and search
+      React.useEffect(() => {
+        let filtered = [...data];
+        if (searchPI) {
+          filtered = filtered.filter(item => 
+            item.PI.toLowerCase().includes(searchPI.toLowerCase())
+          );
+        }
+        if (selectedInstitute) {
+          filtered = filtered.filter(item => item.Institute === selectedInstitute);
+        }
+        if (selectedFaculty) {
+          filtered = filtered.filter(item => item.Faculty === selectedFaculty);
+        }
+        if (selectedDepartment) {
+          filtered = filtered.filter(item => item.Department === selectedDepartment);
+        }
+        if (selectedResearch) {
+          filtered = filtered.filter(item => item.Research.includes(selectedResearch));
+        }
+        setFilteredData(filtered);
+      }, [searchPI, selectedInstitute, selectedFaculty, selectedDepartment, selectedResearch, data]);
+
+      // Exporting filtered data as CSV
+      const handleExport = () => {
+        const csv = Papa.unparse(filteredData.map(item => ({
+          PI: item.PI,
+          Institute: item.Institute,
+          Faculty: item.Faculty,
+          'Department/School': item.Department,
+          'Research 1': item.Research[0] || '',
+          'Research 2': item.Research[1] || '',
+          'Research 3': item.Research[2] || '',
+          'Research 4': item.Research[3] || '',
+          'Research 5': item.Research[4] || '',
+          'Research 6': item.Research[5] || ''
+        })));
+        const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = 'researchers.csv';
+        link.click();
+      };
+
+      // Color mapping for Institutes
+      const instituteColors = {
+        'CITYU': 'bg-blue-200',
+        'CUHK': 'bg-green-200',
+        'HKBU': 'bg-red-200',
+        'HKPU': 'bg-yellow-200',
+        'HKU': 'bg-purple-200',
+        'HKUST': 'bg-orange-200',
+        'MUST': 'bg-pink-200',
+        'UM': 'bg-teal-200'
+      };
+
+      // Function to get Institute color
+      const getInstituteColor = (institute) => instituteColors[institute] || 'bg-gray-200';
+
+      // Rendering loading state
+      if (loading) {
+        return (
+          <div className="flex justify-center items-center h-screen">
+            <div className="text-xl font-semibold">Loading...</div>
+          </div>
+        );
+      }
+
+      // Rendering main UI
+      return (
+        <div className="container mx-auto p-4">
+          <h1 className="text-3xl font-bold mb-6 text-center">Researcher Information System</h1>
+
+          {/* Search and Filter Section */}
+          <div className="bg-white p-4 rounded-lg shadow-md mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+              <input
+                type="text"
+                placeholder="Search by PI"
+                className="border p-2 rounded w-full"
+                value={searchPI}
+                onChange={(e) => setSearchPI(e.target.value)}
+              />
+              <select
+                className="border p-2 rounded w-full"
+                value={selectedInstitute}
+                onChange={(e) => setSelectedInstitute(e.target.value)}
+              >
+                <option value="">All Institutes</option>
+                {availableInstitutes.map(institute => (
+                  <option key={institute} value={institute}>{institute}</option>
+                ))}
+              </select>
+              <select
+                className="border p-2 rounded w-full"
+                value={selectedFaculty}
+                onChange={(e) => setSelectedFaculty(e.target.value)}
+              >
+                <option value="">All Faculties</option>
+                {availableFaculties.map(faculty => (
+                  <option key={faculty} value={faculty}>{faculty}</option>
+                ))}
+              </select>
+              <select
+                className="border p-2 rounded w-full"
+                value={selectedDepartment}
+                onChange={(e) => setSelectedDepartment(e.target.value)}
+              >
+                <option value="">All Departments</option>
+                {availableDepartments.map(dept => (
+                  <option key={dept} value={dept}>{dept}</option>
+                ))}
+              </select>
+              <select
+                className="border p-2 rounded w-full"
+                value={selectedResearch}
+                onChange={(e) => setSelectedResearch(e.target.value)}
+              >
+                <option value="">All Research Areas</option>
+                {availableResearchAreas.map(area => (
+                  <option key={area} value={area}>{area}</option>
+                ))}
+              </select>
+            </div>
+            <div className="flex justify-end mt-4">
+              <button
+                className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+                onClick={handleExport}
+              >
+                Export CSV
+              </button>
+            </div>
+          </div>
+
+          {/* Data Table */}
+          <div className="bg-white rounded-lg shadow-md overflow-x-auto">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr className="bg-gray-200">
+                  <th className="border p-2 text-left">PI</th>
+                  <th className="border p-2 text-left">Institute</th>
+                  <th className="border p-2 text-left">Faculty</th>
+                  <th className="border p-2 text-left">Department/School</th>
+                  <th className="border p-2 text-left">Research Areas</th>
+                </tr>
+              </thead>
+              <tbody>
+                {filteredData.map((item, index) => (
+                  <tr key={index} className="hover:bg-gray-50">
+                    <td className="border p-2">{item.PI}</td>
+                    <td className={`border p-2 ${getInstituteColor(item.Institute)} text-black`}>
+                      {item.Institute}
+                    </td>
+                    <td className="border p-2">{item.Faculty}</td>
+                    <td className="border p-2">{item.Department}</td>
+                    <td className="border p-2">
+                      {item.Research.map((area, idx) => (
+                        <span key={idx} className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded mr-1 mb-1">
+                          {area}
+                        </span>
+                      ))}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      );
+    };
+
+    // Rendering the App
+    root.render(<App />);
+  </script>
+</body>
+</html>
